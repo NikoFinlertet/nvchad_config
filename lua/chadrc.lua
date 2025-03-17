@@ -7,18 +7,47 @@ local M = {}
 
 M.base46 = {
 	theme = "chadracula-evondev",
-
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+  transparency = true,
 }
 
--- M.nvdash = { load_on_startup = true }
--- M.ui = {
---       tabufline = {
---          lazyload = false
---      }
---}
+M.statusline = {
+  enabled = true,
+  theme = "vscode",
+}
+
+M.nvdash = {
+  load_on_startup = true,
+  header = {
+      "                            ",
+      "     ▄▄         ▄ ▄▄▄▄▄▄▄   ",
+      "   ▄▀███▄     ▄██ █████▀    ",
+      "   ██▄▀███▄   ███           ",
+      "   ███  ▀███▄ ███           ",
+      "   ███    ▀██ ███           ",
+      "   ███      ▀ ███           ",
+      "   ▀██ █████▄▀█▀▄██████▄    ",
+      "     ▀ ▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀   ",
+      "                            ",
+      "   Configurated By  iko   ",
+      "                            ",
+  }
+}
+
+M.hl_override = {
+  Comment = {italic=true},
+  ["@comment"] = {italic=true},
+  DiffChange = {
+    bg = "#464414",
+    fg = "none",
+  },
+  DiffAdd = {
+    bg = "#103507",
+    fg = "none",
+  },
+    DiffRemoved = {
+    bg = "#461414",
+    fg = "none",
+  },
+}
 
 return M
