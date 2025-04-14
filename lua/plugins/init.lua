@@ -34,6 +34,8 @@ return {
         "css",
         "go",
         "rust",
+        "c",
+        "cpp",
       },
     },
   },

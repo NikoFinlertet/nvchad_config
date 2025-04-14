@@ -3,7 +3,13 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    go = {"gofumpt", "goimports", "golines"}
+    go = { "gofumpt", "goimports", "golines" },
+    python = { "ast-grep" },
+    rust = { "ast-grep" },
+    c = { "clang-format", "ast-grep" },
+    cpp = { "clang-format", "ast-grep" },
+    asm = { "asmfmt" },
+    java = { "clang-format", "ast-grep" },
   },
 
   format_on_save = {
